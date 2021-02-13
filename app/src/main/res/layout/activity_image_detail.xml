@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:elevation="@dimen/dp_5"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:padding="@dimen/dp_5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_back" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/header_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_back"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="The current COVID-19 crisis has presented enterprises across the …" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/photo_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_64"
+        android:scaleType="centerCrop" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/dp_100"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/user_pic"
+            android:layout_width="@dimen/dp_36"
+            android:layout_height="@dimen/dp_36"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp_19"
+            android:layout_marginLeft="@dimen/dp_19"
+            app:srcCompat="@drawable/user_pic" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="66dp"
+            android:layout_marginLeft="66dp"
+            android:layout_marginBottom="@dimen/dp_19"
+            android:text="User Name"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_favourite"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_22"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            app:srcCompat="@drawable/unfavorite_icon" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

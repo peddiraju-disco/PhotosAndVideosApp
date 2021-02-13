@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PhotosAndVideosApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_photo_fragment">Photo fragment</string>
+    <string name="hello_video_fragment">Video fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="discover_the_world_s_n_best_photos_amp_videos"><![CDATA[Discover the world’s \n best photos & videos]]></string>
+    <string name="best_memories_online">Best memories online</string>
+    <string name="search_view_hint">Search photos, videos, artists</string>
+    <string name="buffering_string">Loading..</string>
+
+</resources>

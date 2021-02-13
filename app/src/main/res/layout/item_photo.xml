@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/photo_id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_192"
+        android:layout_margin="@dimen/dp_10"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_favourite"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_22"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        app:layout_constraintEnd_toEndOf="@+id/photo_id"
+        app:layout_constraintTop_toTopOf="@id/photo_id"
+        app:srcCompat="@drawable/unfavorite_icon" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/user_pic"
+        android:layout_width="@dimen/dp_36"
+        android:layout_height="@dimen/dp_36"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_10"
+        app:layout_constraintBottom_toBottomOf="@id/photo_id"
+        app:layout_constraintStart_toStartOf="@+id/photo_id"
+        app:srcCompat="@drawable/user_pic" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginBottom="@dimen/dp_19"
+        android:text="User Name"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/photo_id"
+        app:layout_constraintStart_toStartOf="@+id/photo_id" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/play_icon"
+        android:layout_width="@dimen/dp_64"
+        android:layout_height="@dimen/dp_64"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/photo_id"
+        app:layout_constraintStart_toStartOf="@+id/photo_id"
+        app:layout_constraintTop_toTopOf="@+id/photo_id"
+        app:srcCompat="@drawable/play_icon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
